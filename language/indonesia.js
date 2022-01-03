@@ -1,98 +1,95 @@
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return ` 잠시만 기다려주세요~`
 }
 
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `완료`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `오류 보통 기능`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `링크가 오류입니다`
 }
 exports.media = () => {
-    return `Silahkan pilih media yang ingin kamu download`
+    return `다운로드할 미디어를 선택하세요.`
 }
 exports.replyImg = (prefix, command) => {
-    return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
+    return `캡션이 있는 사진 보내기/회신 ${prefix + command}`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `잘못된 형식 .에서 사용 방법을 확인하십시오 *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
+    return ` 전하고 싶은 메시지를 입력해주세요!`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
+    return `명령어 *${cmd}* 에 등록되지 않은 *${prefix}allmenu*`
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner!`
+    return `이 명령은 특히 소유자를 위한 것입니다!`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `완료되었습니다, 소유자 ~`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return ` 이 명령은 그룹에서만 사용할 수 있습니다!`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `  이 명령은 그룹 관리자만 사용할 수 있습니다!`
 }
 
 exports.nhFalse = () => {
-    return `Kode tidak valid!`
+    return `유효하지 않은 코드!`
 }
 
 exports.listBlock = (blockNumber) => {
-    return `*── 「 HALL OF SHAME 」 ──*
+    return `*── 「 수치의 전당 」 ──*
     
-Total diblokir: *${blockNumber.length}* user\n`
+완전히 차단됨: *${blockNumber.length}* 사용자\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `사용자는 관리자가 아닙니다!`
 }
 
 exports.adminAlready = () => {
-    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
+    return `관리자인 사용자는 승격할 수 없습니다!`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `먼저 봇을 관리자로 만드세요!`
 }
 
 exports.received = (pushname) => {
     return `
-Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+안녕하세요 ${pushname}!
+신고해 주셔서 감사합니다. 곧 신고해 드리겠습니다.`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `파일 크기가 너무 큽니다!`
 }
 
 exports.notNum = (q) => {
-    return `"${q}", bukan angka!`
+    return `"${q}", 숫자가 아닙니다!`
 }
 exports.menunya = (salam, pushname) =>{
-	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya Alphabot-Md, bot ini adalah Beta Multi-Device Whatsapp. 
-Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
-lapor owner agar segera di perbaiki 🙏      
+	return`안녕 친구 ${pushname} Gay, 👋 안전한 ${salam} , 이 whatsapp 봇은 gumoon Indonesia에서 만들었으며 모든 개인 정보 보호 정책은 gumoon Indonesia q의 개인 정보를 따릅니다.🙏      
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} ${pushname} 😖*
-*⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+    return `*안전한 ${salam} ${pushname} Gay*
+*⌚시간 서버 : ${time}*
+*📚 오늘의 리스트 메뉴 트렌드 :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -451,67 +448,56 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}ttp [text]
 ╰❒ ${prefix}attp [text]
 
-╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
+이용약관 구문인도네시아 이용약관 준수
 
     `
 }
 
 exports.rules = (prefix) => {
     return `
+
 *── 「 RULES AND FAQ 」 ──*
 
-1. Jangan spam bot. 🙅
-Sanksi: *❎ WARN/SOFT BLOCK*
+1. 봇을 스팸하지 마십시오. 🙅
+제재: *경고/소프트 차단*
 
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
+2. 봇을 부르지 마세요. ☎️
+제재: *소프트 블록*
 
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *PERMANENT BLOCK*
+3. 봇을 악용하지 마십시오.😖
+제재: *영구 차단*
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
+🗯️ 봇이 아니거나 응답이 느립니까?
+➡️ 네트워크, 신호, Whatsapp 및 어떤 이유로 금지된 영향을 받을 수 있습니다. 규칙을 지켜주세요‼️
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
+🗯️ 이 봇에서 스크립트를 어디에서 받을 수 있습니까?
+➡️ 이 스크립트는 여전히 비공개이며 거래된 적이 없습니다. 사기꾼을 아는 것이 현명합니다.
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
+🗯️ 그룹에 추가할 수 있습니까?
+➡️ 봇은 현재 상태를 추가할 수 있는 무료 상태입니다.
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
+🗯️ 접두사는 무엇입니까?
+➡️ 이 봇은 여러 접두사를 사용합니다. 즉, #, 접두사를 사용할 수 있습니다. 및 기타 합리적인 접두사.
 
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
+🗯️ 언니, 왜 채팅 주인이 응답하지 않습니까?
+➡️ 소유자는 봇 및 오류 문제에 대한 질문에만 응답하며, 지인이나 스크립트를 구걸하는 것은 아닙니다.
 
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
+규칙을 이해했다면 다음을 입력하십시오. *allmenu* 시작한다!
 
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
+⚠️ trendtoday의 모든 정책 및 조항은 소유자가 보유하며 모든 정책 변경은 소유자가 언제든지 사용자를 취소, 차단할 수 있는 권한이 있습니다(*﹏*) 
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
-😖🙏
+매우 감사합니다! 트랜드투데이 봇 제작 프로젝트에 도움을 주신 친절한 유저분들과 몇몇 분들을 위해
+
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`Halo ${pushname}, Jangan Lupa Intro Gay
 	
 📛 𝖭𝖺𝗆𝖺 :
 🔞 𝖴𝗆𝗎𝗋 :
 🧑 𝖦𝖾𝗇𝖽𝖾𝗋 :
-🏙️ 𝖠𝗌𝗄𝗈𝗍 :
-╰ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╰ Patuhi Syarat Dan Ketentuan Gumoon Indonesia Ya Gay ~`
 }
 exports.leave = () =>{
 	return`Yah kok out 😣 Mental aman kan kak >.<
@@ -520,24 +506,19 @@ Goodbye`
 exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://github.com/zeeoneofc/Alphabot-Md
 `
 }
 exports.tos = (ownernomer) => {
     return `
+
 *── 「 DONATE 」 ──*
 
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
+Hai 👋
+layanan bot ini tidak membuka donasi teman-teman, Donasi-kan lah ke anak yatim piatu atau orang orang yang lebih membutuhkan, hal tersebut sudah menjadi bentuk donasi ke bot ini, terima kasih. Atau kalian bisa donasi ke sesama yang membutuhkan di https://kitabisa.com/
 
-Berapapun donasi kalian akan sangat berarti 👍
 
-Thanks!
-
-Contact person Owner:
-wa.me/${ownernomer} (Owner)
-
+이 봇 서비스는 기부, 친구, 고아 또는 더 필요한 사람들에게 기부를 열지 않고이 봇에 기부 형식이되었습니다. 감사합니다.
+    
     `
 }
 
